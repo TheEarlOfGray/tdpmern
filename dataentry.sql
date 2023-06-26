@@ -18,4 +18,11 @@ INSERT INTO orders (fk_cust_id, fk_prod_id)
 VALUES (1, 4),
 (4, 3);
 
-SELECT * FROM orders;
+SELECT * FROM customers;
+
+DELETE FROM customers
+WHERE id=3;
+
+UPDATE customers
+SET first_name='Tim', last_name='Simms'
+WHERE id=1;
